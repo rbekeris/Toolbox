@@ -6,9 +6,11 @@ for key in a_dict:
     print(key)
     print(a_dict[key])
 
-#Return items 
+#Return items as tuples
+for item in a_dict.items():
+    print(item)
 
-
-
-#For each value-key pair in dictionary, append a tuple
+#access each item tuple value separately (using tuple unpacking)
+for key, value in a_dict.items():
+    print(key, '->', value)
 
