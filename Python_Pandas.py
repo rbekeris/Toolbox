@@ -20,3 +20,6 @@ df = df.drop('B', 1)
 
 #Drop first 3 rows
 df.drop(df.index[:3], inplace=True)
+
+#REGEXP---{find any number of consecutive integers before ')' character}
+df['colname'] = df['colname'].str.extract(r'(\d+(?=\)))') 
