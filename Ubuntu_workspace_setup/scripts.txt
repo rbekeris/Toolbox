@@ -1,0 +1,24 @@
+sudo apt install bash-completion
+sudo apt install gnome-tweaks
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+sudo apt install docker-ce
+sudo usermod -aG docker ${USER}
+su - ${USER}
+git config --global user.name "Reinis Bekeris"
+git config -- global user.email "bekeris.code@gmail.com"
+git config --list
+sudo apt install xrdp
+sudo apt install net-tools
+sudo apt-get install -y vim-gtk3
+sudo apt -y  install openjdk-11-jdk openjdk-11-jre
+sudo add-apt-repository ppa:serge-rider/dbeaver-ce
+sudo apt-get install dbeaver-ce
+
+
+
+
