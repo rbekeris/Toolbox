@@ -1,0 +1,19 @@
+#Pull MS official image
+docker pull mcr.microsoft.com/mssql/server:latest
+
+#Command set for setting up basic sql server
+
+docker run \
+-e 'ACCEPT_EULA=Y' \
+-e 'SA_PASSWORD=Password1!' \
+-e 'MSSQL_PID=Express' \
+--name sqlserver \
+-p 1433:1433 -d mcr.microsoft.com/mssql/server:latest
+
+#Get bash on the container
+docker exec -it sqlserver "bash"
+
+#enter SQL command line
+/opt/mssql-tools/bin/sqlcmd -S localhost -U SA -P "Password1!"
+
+
