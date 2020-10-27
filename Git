@@ -3,3 +3,6 @@ git branch newbranchname #create a new branch
 git fetch all #fetches all of the remotea branch contents
 git status # nothing to say
 
+
+
+

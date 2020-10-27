@@ -1,0 +1,4 @@
+#change shell scripts file permission to executable
+chmod +x scritname.sh
+
+#
