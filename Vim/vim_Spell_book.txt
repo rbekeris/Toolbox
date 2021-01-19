@@ -52,3 +52,13 @@ Fx -> move to previous x in the line
 ; repeat the search 
 , repeat the search in oposite direction
 
+`` -> return to the last position(before search,G or edit)
+-----
+ADVANCED
+-----
+
+vim + filename -> opens file with cursor at the last line
+vim +/stringpattern("string with spaces") -> opens the file at string occurance
+
+
+
