@@ -1,0 +1,54 @@
+Baker's Vim Spell book
+---------
+INSERTING
+---------
+A -> append text at the end of the line
+I -> Insert text at the beginning of the line
+O -> enter new line above current cursor position
+o -> enter new line below current cursor position
+s -> delete char at cursor&substitute
+R -> "overstrike existing characters with new characters"
+---------
+MOVEMENT
+---------
+CTRL (means)-> " ^ "
+
+^f -> Scroll forward one screen
+^b -> Scroll backward one screen 
+^d -> Scroll forward half screen
+^u -> Scroll backward one screen
+z+ENTER -> move current line to the top of the screen
+z. -> move current line to the middle of the screen
+z- -> move current line to the end of screen
+200z+ENTER -> moves 200th line to the top of the screen
+^+L -> "re-draw" the screen
+--
+MOVEMENT within a screen
+--
+H - "home" move to the 1st line of the screen
+M - move to the middle of the screen
+L - move to the last line of the screen
+
+5H - move five lines below the top of page
+5L - move five lines above the bottom of the page
+
++ -> move to the first char of the next line
+- -> move to the first char of the previous line
+
+e -> move to the end of the word
+( -> move to the beginnig of the current sentence
+) -> move to the beginning of the next sentence
+ -> move to the beginning of the next sentence
+-----
+MOVE BY SEARCHING
+----------
+/ -> search for a pattern and move to the beginning to that pattern 
+? -> search backwards
+n -> repeat the last search pattern
+N -> repeat the search but in the oposite direction
+
+fx -> move the cursor to the next occurance of x in the line
+Fx -> move to previous x in the line
+; repeat the search 
+, repeat the search in oposite direction
+
