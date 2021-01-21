@@ -60,5 +60,17 @@ ADVANCED
 vim + filename -> opens file with cursor at the last line
 vim +/stringpattern("string with spaces") -> opens the file at string occurance
 
+------
+MARKING(only in session)
+-------
+mx -> a spot
+`x -> return to the character market by x
 
-
+------
+SHELL
+------
+:!command   -> execute one command and return to vim
+:sh         -> continue using shell until stopped by CTRL-D
+:r !date    -> read unix output into the file in the current position
+:r filename -> read text from a file into the current one
+ 
