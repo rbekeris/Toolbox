@@ -74,3 +74,8 @@ SHELL
 :r !date    -> read unix output into the file in the current position
 :r filename -> read text from a file into the current one
  
+------
+Splitting Windows
+------
+:split  -> splits the screen horizontaly for the file open
+:vsplit -> splits the screen vertically for the file open
