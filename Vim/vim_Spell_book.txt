@@ -79,3 +79,29 @@ Splitting Windows
 ------
 :split  -> splits the screen horizontaly for the file open
 :vsplit -> splits the screen vertically for the file open
+-----
+Navigating windows
+-----
+CTRL+W+hjkl (Uses same movement keys prefixed with ^W)
+CTRL+W+p -> go to previous window
+CTRL+W+t -> go to top(first) window
+CTRL+W+B -> go to bottom(last) window
+----
+Moving Windows arround
+----
+CTRL+W+x -> swap current window with the next one
+
+----------
+TABS
+----------
+:tabnew filename -> opens file in a new tab
+:tabclose        -> closes the current tab
+:tabonly         -> closes all the tabs except the current one
+
+CTRL+PAGEDOWN/PAGEUP -> move to the tab on the right/left
+---------
+AUTOCOMPLETE
+---------
+:imap Tab <C-P>  ->maps tab to autocomplete
+
+
