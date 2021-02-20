@@ -116,6 +116,5 @@ if ! shopt -oq posix; then
   fi
 fi
 # RB's settings
-alias "c=xclip"
-alias "v=xclip -o"
 
+alias cpwd="pwd | xclip -selection c"
