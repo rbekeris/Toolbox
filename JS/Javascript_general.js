@@ -39,3 +39,24 @@ if (ValueOfInterest == 3) {
 			console.log("Not so Brilliant");
 		}
 
+//LOOP and INCREMENT COUNTER
+let number = 2
+while(number < 10 ){
+	number+=1;
+	//number-=1
+	//number++
+	//number-
+	//number*2
+	console.log(number)
+}
+
+//DEFINE CUSTOM FUNCTION
+
+const FxName = function(ARG_1,ARG_2){
+	return ARG_1*ARG_2;
+};
+console.log(FxName(2,5))
+
+function FxName(Arg_1, Arg_2){
+	return Arg_1+Arg_2;
+}
