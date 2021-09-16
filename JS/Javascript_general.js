@@ -155,3 +155,41 @@ rabbit.speak("I actually don't like carrots that much.")
 
 //CLASSES
 //A class defines the shape of a type of object (what methods and properties it has). An object of such class is called an Instance.
+//first we start with class declaration:
+class Rabbit {
+	//constructor function to make new rabit objects
+	constructor(type) {
+		this.type = type;
+	}
+	//Method of an object (what it can do)
+	speak(line){
+		console.log(`The ${this.type} rabbit says '${line}'`);
+	}
+}
+// Now we can make new objects of class Rabit
+let killerRabbit = new Rabbit("killer");
+// The new rabbit can speak because it inherits this Method from Rabbit class
+killerRabbit.speak("I'm so fresh!")
+
+//Getter, Setter, Static
+class Temperature {
+	constructor(celsius){
+		this.celsius = celsius;
+	}
+	get fahrenheit(){
+		return this.celsius * 1.8 +32;
+	}
+	set fahrenheit(value) {
+		this.celsius = (value - 32)/1,8;
+	}
+	
+	static fromFahrenheit(value){
+		return new Temperature((value -32)/ 1.8);
+	}
+}
+let temp = new Temperature(22);
+console.log(temp.fahrenheit)
+temp.fahrenheit = 86;
+console.log(temp.celsius)
+//construct temp with celsius from fahrenheit
+console.log(Temperature.fromFahrenheit(33))
