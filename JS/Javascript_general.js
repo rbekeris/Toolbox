@@ -58,5 +58,43 @@ const FxName = function(ARG_1,ARG_2){
 console.log(FxName(2,5))
 
 function FxName(Arg_1, Arg_2){
+	//default value can be added as Arg_2 = 4
 	return Arg_1+Arg_2;
 }
+
+const Fxname = (Arg1,Arg2) => {
+	return Arg1/Arg2;
+};
+console.log(Fxname(2,5))
+
+//DATA STRUCTURES
+
+let OurBrilliantArray = [2,3,4,5,6];
+console.log(OurBrilliantArray)
+
+//Array has properties
+
+let OurBrilliantArray = [2,3,4,5,6];
+console.log(OurBrilliantArray.length)
+
+//Arrat has methods
+let OurBrilliantArray = [2,3,4,5,6];
+ValueToAdd = 7
+//append a value to an array
+OurBrilliantArray.push(ValueToAdd);
+console.log(OurBrilliantArray)
+//remove the last value from an array
+OurBrilliantArray.pop();
+console.log(OurBrilliantArray)
+
+// ---- OBJECTS
+// ---- "You may think of objects as octopuses with any number of tentacles, each of which has a name tattooed on it"
+let day1 = {
+	AteLunch: false,
+	Events: ["Work","Went to store","Ate Chocolate","Ran 5 km"]
+};
+console.log(day1.AteLunch)
+
+//we can easily add new property and assign a value to it!
+day1.BrushedTeeth = true;
+console.log(day1.BrushedTeeth)
