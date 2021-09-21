@@ -1,0 +1,2 @@
+#for .tmux.conf file to take effect we need to run the following bash command
+tmux source-file ~/.tmux.conf
