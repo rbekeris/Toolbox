@@ -22,4 +22,7 @@ df.to_csv(index=False)
 df = pd.read_excel('tmp.xlsx', index_col=0)
 
 #READ from CSV to Daqtaframe
-df = pd.read_csv('data.csv')  
+df = pd.read_csv('data.csv')
+
+#Red stdin (from CLI prompt)
+var_Nr_1 = input()
